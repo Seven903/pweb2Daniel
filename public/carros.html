@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="css/carros.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carros</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body>
+    <span
+      id="close"
+      class="material-symbols-outlined"
+      onclick="voltarParaInicio()"
+    >
+      close
+    </span>
+    <h1>Ver Carros</h1>
+    <span onclick="volt()" id="volt" class="material-symbols-outlined">
+      undo
+    </span>
+    <div id="car"></div>
+    <script>
+      function volt() {
+        window.location.href = "http://127.0.0.1:3000/form";
+      }
+      function voltarParaInicio() {
+        window.location.href = "http://127.0.0.1:3000/";
+      }
+    </script>
+    <script src="js/carros.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="css/form.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body>
+    <span
+      id="close"
+      class="material-symbols-outlined"
+      onclick="voltarParaInicio()"
+    >
+      close
+    </span>
+    <h1>Cadastrar carro</h1>
+    <form id="formulario">
+      <label for="modelo">Modelo</label>
+      <input required type="text" id="modelo" />
+
+      <label for="marca">Marca</label>
+      <input required type="text" id="marca" />
+
+      <label for="ano">Ano fabricação</label>
+      <input required type="date" id="ano" />
+
+      <select required name="cor" id="cor">
+        <option selected disabled value="selecionar cor">selecionar cor</option>
+      </select>
+
+      <label for="kilo">Kilometragem</label>
+      <input required type="text" id="kilo" />
+
+      <label for="valor">Valor</label>
+      <input required type="number" id="valor" />
+
+      <input type="submit" value="enviar" />
+    </form>
+    <script>
+      function voltarParaInicio() {
+        window.location.href = "http://127.0.0.1:3000/";
+      }
+    </script>
+    <script type="module" src="js/form.js"></script>
+  </body>
+</html>
